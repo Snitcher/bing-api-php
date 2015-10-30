@@ -1,0 +1,28 @@
+{
+    "name": "snitcher/bing-api-php",
+    "type": "library",
+    "description": "Bing web search API wrapper in php",
+    "keywords": ["bing"],
+    "homepage": "https://github.com/scragg0x/bing-api-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Scragg",
+            "email": "scragg@gmail.com",
+            "homepage": "http://fleckz.com"
+        },
+        {
+            "name": "Jerre Baumeister",
+            "email": "jerre@snitcher.com",
+            "homepage": "https://snitcher.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Bing": "src/"
+        }
+    }
+}
