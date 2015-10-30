@@ -1,7 +1,7 @@
 bing-api-php
 ============
 
-Very simple bing api wrapper in php.
+A modified version of the original package (scragg0x/bing-api-php) to work with the Bing web-only search API rather than the full search.
 
 ## Install
 
@@ -11,7 +11,7 @@ run the `php composer.phar install` command to install it:
 
     {
         "require": {
-            "scragg0x/bing-api-php": "dev-master"
+            "snitcher/bing-api-php": "dev-master"
         }
     }
 
@@ -33,7 +33,7 @@ $key = '';
 
 $c = new Client($key, 'json');
 
-$res = $c->get('News', array('Query' => 'Obama'));
+$res = $c->get('Web', ['Query' => 'Snitcher.com']);
 
 $res = json_decode($res, true);
 
